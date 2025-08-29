@@ -3,17 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chito IA</title>
+  <title>Chito IA 🤖</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🤖 Chito - Tu IA</h1>
+  <h1>Chito IA 🤖</h1>
 
-  <div id="chat">
-    <div id="messages"></div>
-    <input type="text" id="userInput" placeholder="Escribe aquí...">
+  <div id="chatBox" class="chat-box"></div>
+
+  <div class="input-area">
+    <input type="text" id="userInput" placeholder="Escribe un mensaje...">
     <button onclick="sendMessage()">Enviar</button>
-    <button onclick="generateImage()">Crear Imagen</button>
+  </div>
+
+  <h2>Generar imagen 🎨</h2>
+  <div class="input-area">
+    <input type="text" id="imageInput" placeholder="Describe una imagen...">
+    <button onclick="generateImage()">Generar</button>
   </div>
 
   <script src="app.js"></script>
